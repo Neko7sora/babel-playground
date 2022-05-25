@@ -1,0 +1,31 @@
+{
+  "name": "babel-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && babel src -d src-babel && browserify src-babel/app.js -o src-browserify/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neko7sora/babel-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neko7sora/babel-playground/issues"
+  },
+  "homepage": "https://github.com/Neko7sora/babel-playground#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "typescript": "^4.7.2",
+    "browserify": "^17.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}
